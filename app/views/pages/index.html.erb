@@ -14,15 +14,15 @@
     </div>
 
     <div class="bio-links">
-      <h6><a href="#">My Portfolio</a></h6>
-      <h6><a href="#">Github</a></h6>
+      <h6><a href="#wow">My Portfolio</a></h6>
+      <h6><%= link_to 'Github', 'https://github.com/c-Nosetab', target: '_blank' %></h6>
       <h6><a href="mailto:cpbateson@gmail.com">Contact Me</a></h6>
     </div>
   </div>
 </div>
 
-<div class="on-the-dot">
-  <div class="dot-text">
+<div class="on-the-dot row projects" id="wow">
+  <div class="dot-text col-sm-6 proj-text">
     <div class='title'>
       <h1>On the Dot.</h1>
       <p>Employee Scheduling App</p>
@@ -38,10 +38,11 @@
       <li>Bootstrap</li>
       <li>HTML5</li>
       <li>CSS3</li>
+      <li>AWS</li>
     </ul>
   </div>
 
-  <div class="dot-images">
+  <div class="dot-images col-sm-6 images">
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -67,7 +68,79 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
   </div>
+</div>
+
+<div class="vet-work row projects">
+  <div class="col-sm-6 images">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+           <%= image_tag 'dot-profile', class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+           <%= image_tag 'dot-calendar', class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+           <%= image_tag 'dot-bar-graph', class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+           <%= image_tag 'dot-bubble-chart', class: 'd-block w-100' %>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class=" col-sm-6 proj-text">
+    <div class="title">
+      <h1>Veterans Work</h1>
+      <p>Full Stack Developer</p>
+    </div>
+
+      <p>This is a blurb about Veterans Work</p>
+    <ul class="keywords">
+      <li>Ruby on Rails</li>
+      <li>PostgreSQL</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>Tdd/CI</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="look-at-me">
+  <h1>Check me out!</h1>
+
+  <ul class="pictures">
+    <li><%= image_tag 'cbex' %></li>
+    <li><%= image_tag 'nature' %></li>
+    <li><%= image_tag 'leg-blonde' %></li>
+    <li><%= image_tag 'microphone' %></li>
+    <li><%= image_tag 'redrocks' %></li>
+    <li><%= image_tag 'bfest' %></li>
+  </ul>
+
+</div>
+
+<div class="social">
+  <ul>
+    <li id="github"><%= link_to 'Github', 'https://github.com/c-Nosetab', target: '_blank' %></li>
+    <li id="linkedin"><%= link_to 'LinkedIn', 'https://www.linkedin.com/in/christopher-bateson/', target: '_blank'  %></li>
+    <li id="twtter"><%= link_to 'Twitter', 'https://twitter.com/c_Nosetab', target: '_blank'  %></li>
+    <li id="email"><%= link_to 'Reach Out!', 'mailto:cpbateson@gmail.com', target: '_blank'  %></li>
+  </ul>
+
+  <p>© Christopher Bateson</p>
 </div>
 
