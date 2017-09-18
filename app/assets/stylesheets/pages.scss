@@ -191,6 +191,10 @@ ul.keywords {
 
 .look-at-me {
   background: #55B9DA;
+  background: -webkit-linear-gradient(#55B9DA, white);
+  background: -o-linear-gradient(#55B9DA, white);
+  background: -moz-linear-gradient(#55B9DA, white);
+  background: linear-gradient(#55B9DA, white);
 
   h1 {
     font-family: 'Rubik';
