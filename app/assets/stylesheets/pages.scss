@@ -25,19 +25,33 @@
   align-items: $align;
 }
 
-
 html, body {
-  width: 100%;
   height: 100%;
-  // font-size: 2vw;
+  width: 100%;
   font-size: 18px;
+  background: white;
 }
 
+body:after {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+  z-index: 100;
+}
 
 .bio {
   height: 100%;
   margin: 0;
   padding: 0;
+  background:white;
 
   .picture {
     width: 50%;
@@ -57,7 +71,6 @@ html, body {
     }
   }
 
-
   .text {
     width: 50%;
     height: 100vh;
@@ -70,8 +83,6 @@ html, body {
     .bio-links {
       font-family: 'Libre Baskerville';
     }
-
-
 
     h3 {
       font-family: 'Rubik';
@@ -125,16 +136,32 @@ html, body {
     }
 
     p.description {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
-
-
   }
 
   .images {
     @include flexible(column, center);
-    background: black;
+    // background: black;
     overflow: hidden;
+  }
+}
+
+.on-the-dot {
+  .images {
+    background: -webkit-linear-gradient(white, #A8DBEC);
+    background: -o-linear-gradient(white, #A8DBEC);
+    background: -moz-linear-gradient(white, #A8DBEC);
+    background: linear-gradient(white, #A8DBEC);
+  }
+}
+
+.vet-work {
+  .images {
+    background: -webkit-linear-gradient(#A8DBEC, #55B9DA);
+    background: -o-linear-gradient(#A8DBEC, #55B9DA);
+    background: -moz-linear-gradient(#A8DBEC, #55B9DA);
+    background: linear-gradient(#A8DBEC, #55B9DA);
   }
 }
 
@@ -150,7 +177,7 @@ ul.keywords {
   padding: 0;
 
   li {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-family: 'Libre Baskerville', serif;
     pointer-events: none;
     background: #19677f;
@@ -158,7 +185,7 @@ ul.keywords {
     border-radius: 5px;
     padding: 5px 10px;
     margin: 5px 5px;
-    box-shadow: 2px 2px 5px #666;
+    box-shadow: 2px 2px 5px rgba(200, 200, 200, 0.7);
   }
 }
 
@@ -231,4 +258,9 @@ ul.keywords {
     font-size: 0.7rem;
     padding-top: 40px;
   }
+}
+
+@media screen and (min-width: 767px ) {
+
+
 }

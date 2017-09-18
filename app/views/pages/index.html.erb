@@ -1,12 +1,12 @@
 <div class="row bio" >
-  <div class="picture">
+  <div class="picture col-md-6 col-sm-12">
     <%= image_tag 'headshot', class: 'img-responsive' %>
   </div>
 
-  <div class="text">
+  <div class="text col-md-6 col-sm-12">
     <h3>Christopher Bateson</h3>
 
-    <div class='bio-info'>
+    <div class='bio-info '>
       <h1>Full Stack Developer. Hunger for Learning, Walker of Trails, and Singer of Songs.</h1>
       <h5>
         Chicago-based full stack developer at The Difference Engine, actively seeking new opportunities. In July 2017 I graduated from Actualize and am currently improving my skills in Ruby on Rails, Javascript, and React. Hit me up!
@@ -14,7 +14,7 @@
     </div>
 
     <div class="bio-links">
-      <h6><a href="#wow">My Portfolio</a></h6>
+      <h6><a href onclick="movePage()">My Portfolio</a></h6>
       <h6><%= link_to 'Github', 'https://github.com/c-Nosetab', target: '_blank' %></h6>
       <h6><a href="mailto:cpbateson@gmail.com">Contact Me</a></h6>
     </div>
@@ -22,14 +22,14 @@
 </div>
 
 <div class="on-the-dot row projects" id="wow">
-  <div class="dot-text col-sm-6 proj-text">
+  <div class="dot-text col-md-6 col-sm-12 proj-text">
     <div class='title'>
       <h1>On the Dot.</h1>
       <p>Employee Scheduling App</p>
     </div>
 
     <p class="description">
-      On the Dot. allows you to schedule employees with ease. By simplifying the aspects of scheduling, this appllication allows for quick comprehension. Never again will employees forget their schedules. And using the supplied analytics, you will always be up to date on your current needs. You can see the app in action at <a href="https://on-the-dot.herokuapp.com/" target="_blank">on-the-dot.herokuapp.com</a>
+      On the Dot. allows you to schedule employees with ease. I was inspired to create this app after years of using overly complicated and feature heavy apps that only served to confuse their consumers. By simplifying the aspects of scheduling, my appllication allows for quick comprehension, and easy on-boarding. Never again will employees forget their schedules. And using the supplied analytics, you will always be up to date on your current needs. You can see the app in its current form <a href="https://on-the-dot.herokuapp.com/" target="_blank">HERE</a>!
     </p>
 
     <ul class="keywords">
@@ -46,7 +46,7 @@
     </ul>
   </div>
 
-  <div class="dot-images col-sm-6 images">
+  <div class="dot-images col-md-6 col-sm-12 images">
 
     <div id="dot-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -76,17 +76,17 @@
 </div>
 
 <div class="vet-work row projects">
-  <div class="col-sm-6 images">
+  <div class="col-md-6 col-sm-12 images">
     <div id="vet-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
            <%= image_tag 'vet-mainpage', class: 'd-block w-100' %>
         </div>
         <div class="carousel-item">
-           <%= image_tag 'vet-logo', class: 'd-block w-100' %>
+           <%= image_tag 'vet-logo-black', class: 'd-block w-100' %>
         </div>
         <div class="carousel-item">
-           <%= image_tag 'diff-logo', class: 'd-block w-100 logo' %>
+           <%= image_tag 'diff-logo2', class: 'd-block w-100' %>
         </div>
       </div>
       <a class="carousel-control-prev" href="#vet-carousel" role="button" data-slide="prev">
@@ -100,13 +100,13 @@
     </div>
   </div>
 
-  <div class=" col-sm-6 proj-text">
+  <div class=" col-md-6 col-sm-12 proj-text">
     <div class="title">
       <h1>Veterans Work</h1>
       <p class="description">Full Stack Developer</p>
     </div>
 
-      <p>This is a blurb about Veterans Work</p>
+      <p>The Difference Engine's mission to to provide non-profit organizations MVP apps for free, allowing the companies better outlets for outreach and support in their community. The majority of the company is made up of new developers looking to grow their skills to enter the general workforce as a Dev. Currently my team is working on Veterans Work, an app dedicated to connecting local veteran-owned companies with with consumers to get work done!</p>
     <ul class="keywords">
       <li>Ruby on Rails</li>
       <li>PostgreSQL</li>
@@ -122,7 +122,7 @@
 </div>
 
 
-<div class="look-at-me">
+<div class="look-at-me col-xs-12">
   <h1>Check me out!</h1>
 
   <ul class="pictures">
@@ -136,7 +136,7 @@
 
 </div>
 
-<div class="social">
+<div class="social col-xs-12">
   <ul>
     <li id="github"><%= link_to 'Github', 'https://github.com/c-Nosetab', target: '_blank' %></li>
     <li id="linkedin"><%= link_to 'LinkedIn', 'https://www.linkedin.com/in/christopher-bateson/', target: '_blank'  %></li>
@@ -147,3 +147,12 @@
   <p>© Christopher Bateson</p>
 </div>
 
+<script type="text/javascript">
+  const move = document.querySelector('.port-move');
+
+  function movePage() {
+    console.log('hi');
+  };
+
+
+</script>
