@@ -14,14 +14,14 @@
     </div>
 
     <div class="bio-links">
-      <h6><a href onclick="movePage()">My Portfolio</a></h6>
+      <h6><a href="#portfolio">My Portfolio</a></h6>
       <h6><%= link_to 'Github', 'https://github.com/c-Nosetab', target: '_blank' %></h6>
       <h6><a href="mailto:cpbateson@gmail.com">Contact Me</a></h6>
     </div>
   </div>
 </div>
 
-<div class="on-the-dot row projects" id="wow">
+<div class="on-the-dot row projects" id="portfolio">
   <div class="dot-text col-md-6 col-sm-12 proj-text">
     <div class='title'>
       <h1>On the Dot.</h1>
@@ -63,14 +63,6 @@
            <%= image_tag 'dot-bubble-chart.png', class: 'd-block w-100' %>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#dot-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#dot-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 </div>
@@ -89,14 +81,6 @@
            <%= image_tag 'diff-logo2.png', class: 'd-block w-100' %>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#vet-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#vet-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 
@@ -141,18 +125,8 @@
     <li id="github"><%= link_to 'Github', 'https://github.com/c-Nosetab', target: '_blank' %></li>
     <li id="linkedin"><%= link_to 'LinkedIn', 'https://www.linkedin.com/in/christopher-bateson/', target: '_blank'  %></li>
     <li id="twtter"><%= link_to 'Twitter', 'https://twitter.com/c_Nosetab', target: '_blank'  %></li>
-    <li id="email"><%= link_to 'Reach Out!', 'mailto:cpbateson@gmail.com', target: '_blank'  %></li>
+    <li id="email"><%= link_to 'Reach Out!', 'mailto:cpbateson@gmail.com'  %></li>
   </ul>
 
   <p>© Christopher Bateson</p>
 </div>
-
-<script type="text/javascript">
-  const move = document.querySelector('.port-move');
-
-  function movePage() {
-    console.log('hi');
-  };
-
-
-</script>

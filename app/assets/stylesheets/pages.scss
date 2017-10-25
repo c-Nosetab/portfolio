@@ -29,7 +29,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   background: white;
 }
 
@@ -56,6 +56,8 @@ body:after {
 
   .picture {
     width: 50%;
+    min-width: 450px;
+
     height: 100vh;
     overflow: hidden;
     padding: 0;
@@ -272,9 +274,26 @@ ul.keywords {
 
   .bio {
     height: 200vh;
+
+    .bio-info, h3, .bio-links{
+      width: 150%;
+    }
+
+    .picture {
+      width: 100%;
+      min-width: 450px;
+      height: 100vh;
+    }
+
     .text {
       height: 50%;
+      width: 100%;
     }
+
+    .bio-links {
+
+    }
+
   }
 
   .projects {
@@ -284,7 +303,12 @@ ul.keywords {
     }
 
     .images {
+
     }
+  }
+
+  .vet-work {
+    // float: right;
   }
 
   .look-at-me {
