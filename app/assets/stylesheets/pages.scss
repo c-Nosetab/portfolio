@@ -265,7 +265,37 @@ ul.keywords {
   }
 }
 
-@media screen and (min-width: 767px ) {
+@media screen and (max-width: 767px ) {
 
+  body {
+  }
+
+  .bio {
+    height: 200vh;
+    .text {
+      height: 50%;
+    }
+  }
+
+  .projects {
+    height: 200vh;
+    .proj-text {
+      height: 50%;
+    }
+
+    .images {
+    }
+  }
+
+  .look-at-me {
+    ul {
+      li {
+        float: none;
+        display: block;
+        margin: 10px auto;
+
+      }
+    }
+  }
 
 }
